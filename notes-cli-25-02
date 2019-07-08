@@ -1,0 +1,105 @@
+Compiled successfully!
+
+You can now view frontend in the browser.
+
+  Local:            http://localhost:3000/
+  On Your Network:  http://192.168.10.1:3000/
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+^C
+leonidass-mbp:frontend leonidassavvides$ docker build .
+unable to prepare context: unable to evaluate symlinks in Dockerfile path: lstat /Users/leonidassavvides/Documents/Docker for Mac/frontend/Dockerfile: no such file or directory
+leonidass-mbp:frontend leonidassavvides$ docker build -f Dockerfile.dev .
+^C
+leonidass-mbp:frontend leonidassavvides$ docker build -f Dockerfile.dev .
+Sending build context to Docker daemon  239.8MB
+Step 1/6 : FROM node:alpine
+ ---> ebbf98230a82
+Step 2/6 : WORKDIR '/app'
+ ---> Using cache
+ ---> 9f7ae4ef6f86
+Step 3/6 : COPY package.json .
+ ---> Using cache
+ ---> e82e6149e1de
+Step 4/6 : RUN npm install
+ ---> Using cache
+ ---> fdcf52f1934b
+Step 5/6 : COPY . .
+ ---> cf3be9bdf18f
+Step 6/6 : CMD ["npm", "run", "start"]
+ ---> Running in 46fd22c3371d
+Removing intermediate container 46fd22c3371d
+ ---> f05ac8481451
+Successfully built f05ac8481451
+leonidass-mbp:frontend leonidassavvides$ docker run f05ac8481451
+
+> frontend@0.1.0 start /app
+> react-scripts start
+
+Starting the development server...
+
+Compiled successfully!
+
+You can now view frontend in the browser.
+
+  Local:            http://localhost:3000/
+  On Your Network:  http://172.17.0.2:3000/
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+^Cleonidass-mbp:frontend leonidassavvides$ 
+leonidass-mbp:frontend leonidassavvides$ docker run -p 3000:3000 f05ac8481451
+
+> frontend@0.1.0 start /app
+> react-scripts start
+
+Starting the development server...
+
+Compiled successfully!
+
+You can now view frontend in the browser.
+
+  Local:            http://localhost:3000/
+  On Your Network:  http://172.17.0.2:3000/
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+^Cleonidass-mbp:frontend leonidassavvides$ pwd
+/Users/leonidassavvides/Documents/Docker for Mac/frontend
+leonidass-mbp:frontend leonidassavvides$ docker build -f Dockerfile.dev .
+Sending build context to Docker daemon  239.8MB
+Step 1/6 : FROM node:alpine
+ ---> ebbf98230a82
+Step 2/6 : WORKDIR '/app'
+ ---> Using cache
+ ---> 9f7ae4ef6f86
+Step 3/6 : COPY package.json .
+ ---> Using cache
+ ---> e82e6149e1de
+Step 4/6 : RUN npm install
+ ---> Using cache
+ ---> fdcf52f1934b
+Step 5/6 : COPY . .
+ ---> 62396904b5b0
+Step 6/6 : CMD ["npm", "run", "start"]
+ ---> Running in 3e131f889d8b
+Removing intermediate container 3e131f889d8b
+ ---> 30b35a23c84c
+Successfully built 30b35a23c84c
+leonidass-mbp:frontend leonidassavvides$ docker run -p 3000:3000 -v $(pwd):/app 30b35a23c84c
+Unable to find image 'for:latest' locally
+docker: Error response from daemon: pull access denied for for, repository does not exist or may require 'docker login'.
+See 'docker run --help'.
+leonidass-mbp:frontend leonidassavvides$ docker run -p 3000:3000 -v $(pwd):/app 30b35a23c84c
+Unable to find image 'for:latest' locally
+docker: Error response from daemon: pull access denied for for, repository does not exist or may require 'docker login'.
+See 'docker run --help'.
+leonidass-mbp:frontend leonidassavvides$ docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app 30b35a23c84c
+Unable to find image 'for:latest' locally
+docker: Error response from daemon: pull access denied for for, repository does not exist or may require 'docker login'.
+See 'docker run --help'.
+leonidass-mbp:frontend leonidassavvides$ docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app 30b35a23c84c

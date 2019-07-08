@@ -1,0 +1,308 @@
+leonidass-mbp:visits leonidassavvides$ ls
+Dockerfile              index.js                index_copy_1.js         update-node-npm.txt
+docker-compose.yml      index_copy.js           package.json
+leonidass-mbp:visits leonidassavvides$ ls
+Dockerfile              index.js                index_copy_1.js         update-node-npm.txt
+docker-compose.yml      index_copy.js           package.json
+leonidass-mbp:visits leonidassavvides$ cd ..
+leonidass-mbp:Docker for Mac leonidassavvides$ ls
+redis-image     simpleweb       visits          visits.zip
+leonidass-mbp:Docker for Mac leonidassavvides$ npm install -g create-react-app
+/usr/local/bin/create-react-app -> /usr/local/lib/node_modules/create-react-app/index.js
++ create-react-app@2.1.5
+added 63 packages from 20 contributors in 15.23s
+leonidass-mbp:Docker for Mac leonidassavvides$ create-react-app frontend
+
+Creating a new React app in /Users/leonidassavvides/Documents/Docker for Mac/frontend.
+
+Installing packages. This might take a couple of minutes.
+Installing react, react-dom, and react-scripts...
+
+
+> fsevents@1.2.7 install /Users/leonidassavvides/Documents/Docker for Mac/frontend/node_modules/chokidar/node_modules/fsevents
+> node install
+
+[fsevents] Success: "/Users/leonidassavvides/Documents/Docker for Mac/frontend/node_modules/chokidar/node_modules/fsevents/lib/binding/Release/node-v67-darwin-x64/fse.node" is installed via remote
+
+> fsevents@1.2.4 install /Users/leonidassavvides/Documents/Docker for Mac/frontend/node_modules/fsevents
+> node install
+
+  SOLINK_MODULE(target) Release/.node
+  CXX(target) Release/obj.target/fse/fsevents.o
+../fsevents.cc:63:6: warning: field 'async_resource' will be initialized after field 'lockStarted' [-Wreorder]
+   : async_resource("fsevents:FSEvents"), lockStarted(false) {
+     ^
+1 warning generated.
+  SOLINK_MODULE(target) Release/fse.node
+  COPY /Users/leonidassavvides/Documents/Docker for Mac/frontend/node_modules/fsevents/lib/binding/Release/node-v67-darwin-x64/fse.node
+  TOUCH Release/obj.target/action_after_build.stamp
++ react@16.8.1
++ react-dom@16.8.1
++ react-scripts@2.1.5
+added 1982 packages from 737 contributors and audited 36343 packages in 280.32s
+found 0 vulnerabilities
+
+
+Initialized a git repository.
+
+Success! Created frontend at /Users/leonidassavvides/Documents/Docker for Mac/frontend
+Inside that directory, you can run several commands:
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd frontend
+  npm start
+
+Happy hacking!
+leonidass-mbp:Docker for Mac leonidassavvides$ ls
+frontend        redis-image     simpleweb       visits          visits.zip
+leonidass-mbp:Docker for Mac leonidassavvides$ cd frontend/
+leonidass-mbp:frontend leonidassavvides$ ls
+README.md               package-lock.json       public
+node_modules            package.json            src
+leonidass-mbp:frontend leonidassavvides$ code .
+bash: code: command not found
+leonidass-mbp:frontend leonidassavvides$ ls
+
+
+http://localhost:3000/
+
+
+Compiled successfully!
+
+You can now view frontend in the browser.
+
+  Local:            http://localhost:3000/
+  On Your Network:  http://192.168.10.1:3000/
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+^C
+leonidass-mbp:frontend leonidassavvides$ ls
+Dockerfile.dev          node_modules            package.json
+README.md               notes-cli.txt           public
+build                   package-lock.json       src
+leonidass-mbp:frontend leonidassavvides$ docker build .
+unable to prepare context: unable to evaluate symlinks in Dockerfile path: lstat /Users/leonidassavvides/Documents/Docker for Mac/frontend/Dockerfile: no such file or directory
+leonidass-mbp:frontend leonidassavvides$ docker build -f Dockerfile.dev .
+Sending build context to Docker daemon  239.7MB
+Step 1/6 : FROM node:alpine
+ ---> ebbf98230a82
+Step 2/6 : WORKDIR '/app'
+ ---> Using cache
+ ---> 9f7ae4ef6f86
+Step 3/6 : COPY package.json .
+ ---> e82e6149e1de
+Step 4/6 : RUN npm install
+ ---> Running in 9eb7186376a4
+npm WARN deprecated kleur@2.0.2: Please upgrade to kleur@3 or migrate to 'ansi-colors' if you prefer the old syntax. Visit <https://github.com/lukeed/kleur/releases/tag/v3.0.0\> for migration path(s).
+npm WARN deprecated circular-json@0.3.3: CircularJSON is in maintenance only, flatted is its successor.
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN ts-pnp@1.0.0 requires a peer of typescript@* but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.7 (node_modules/chokidar/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.7: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+added 1847 packages from 720 contributors and audited 36343 packages in 175.887s
+found 0 vulnerabilities
+
+Removing intermediate container 9eb7186376a4
+ ---> fdcf52f1934b
+Step 5/6 : COPY . .
+ ---> e93eb28cca1a
+Step 6/6 : CMD ["npm", "run", "start"]
+ ---> Running in bddef361ed40
+Removing intermediate container bddef361ed40
+ ---> fb0e2becf4f2
+Successfully built fb0e2becf4f2
+leonidass-mbp:frontend leonidassavvides$ docker build -f Dockerfile.dev .
+Sending build context to Docker daemon  1.443MB
+Step 1/6 : FROM node:alpine
+ ---> ebbf98230a82
+Step 2/6 : WORKDIR '/app'
+ ---> Using cache
+ ---> 9f7ae4ef6f86
+Step 3/6 : COPY package.json .
+ ---> Using cache
+ ---> e82e6149e1de
+Step 4/6 : RUN npm install
+ ---> Using cache
+ ---> fdcf52f1934b
+Step 5/6 : COPY . .
+ ---> 41a1aede8b05
+Step 6/6 : CMD ["npm", "run", "start"]
+ ---> Running in ffe5bf1717b9
+Removing intermediate container ffe5bf1717b9
+ ---> 0b52b320d199
+Successfully built 0b52b320d199
+leonidass-mbp:frontend leonidassavvides$ docker run 0b52b320d199
+
+> frontend@0.1.0 start /app
+> react-scripts start
+
+Starting the development server...
+
+Compiled successfully!
+
+You can now view frontend in the browser.
+
+  Local:            http://localhost:3000/
+  On Your Network:  http://172.17.0.2:3000/
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+^Cleonidass-mbp:frontend leonidassavvides$ docker run 3000:3000 0b52b320d199
+Unable to find image '3000:3000' locally
+docker: Error response from daemon: pull access denied for 3000, repository does not exist or may require 'docker login'.
+See 'docker run --help'.
+leonidass-mbp:frontend leonidassavvides$ docker run -p 3000:3000 0b52b320d199
+
+> frontend@0.1.0 start /app
+> react-scripts start
+
+Starting the development server...
+
+Compiled successfully!
+
+You can now view frontend in the browser.
+
+  Local:            http://localhost:3000/
+  On Your Network:  http://172.17.0.2:3000/
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+^Cleonidass-mbp:frontend leonidassavvides$ 
+leonidass-mbp:frontend leonidassavvides$ dockermmm run -p 3000:3000-v /app/node_modules -v $(pwd):/app  0b52b320d199
+bash: dockermmm: command not found
+leonidass-mbp:frontend leonidassavvides$ dockermmm run -p 3000:3000-v /app/node_modules -v $(pwd):/app  0b52b320d199
+bash: dockermmm: command not found
+leonidass-mbp:frontend leonidassavvides$ 
+leonidass-mbp:frontend leonidassavvides$ docker build -f Dockerfile.dev .
+Sending build context to Docker daemon  1.443MB
+Step 1/6 : FROM node:alpine
+ ---> ebbf98230a82
+Step 2/6 : WORKDIR '/app'
+ ---> Using cache
+ ---> 9f7ae4ef6f86
+Step 3/6 : COPY package.json .
+ ---> Using cache
+ ---> e82e6149e1de
+Step 4/6 : RUN npm install
+ ---> Using cache
+ ---> fdcf52f1934b
+Step 5/6 : COPY . .
+ ---> af0619f78edd
+Step 6/6 : CMD ["npm", "run", "start"]
+ ---> Running in e3c859773828
+Removing intermediate container e3c859773828
+ ---> 4775f5bf82de
+Successfully built 4775f5bf82de
+leonidass-mbp:frontend leonidassavvides$ docker run -p 3000:3000 -v $(pwd):/app 4775f5bf82de
+Unable to find image 'for:latest' locally
+docker: Error response from daemon: pull access denied for for, repository does not exist or may require 'docker login'.
+See 'docker run --help'.
+leonidass-mbp:frontend leonidassavvides$ docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app 4775f5bf82de
+Unable to find image 'for:latest' locally
+docker: Error response from daemon: pull access denied for for, repository does not exist or may require 'docker login'.
+See 'docker run --help'.
+leonidass-mbp:frontend leonidassavvides$ docker build -f Dockerfile.dev .
+Sending build context to Docker daemon  1.443MB
+Step 1/6 : FROM node:alpine
+ ---> ebbf98230a82
+Step 2/6 : WORKDIR '/app'
+ ---> Using cache
+ ---> 9f7ae4ef6f86
+Step 3/6 : COPY package.json .
+ ---> Using cache
+ ---> e82e6149e1de
+Step 4/6 : RUN npm install
+ ---> Using cache
+ ---> fdcf52f1934b
+Step 5/6 : COPY . .
+ ---> Using cache
+ ---> af0619f78edd
+Step 6/6 : CMD ["npm", "run", "start"]
+ ---> Using cache
+ ---> 4775f5bf82de
+Successfully built 4775f5bf82de
+leonidass-mbp:frontend leonidassavvides$ docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app 4775f5bf82de
+Unable to find image 'for:latest' locally
+docker: Error response from daemon: pull access denied for for, repository does not exist or may require 'docker login'.
+See 'docker run --help'.
+leonidass-mbp:frontend leonidassavvides$ docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app 4775f5bf82de
+Unable to find image 'for:latest' locally
+docker: Error response from daemon: pull access denied for for, repository does not exist or may require 'docker login'.
+See 'docker run --help'.
+leonidass-mbp:frontend leonidassavvides$ docker build -f Dockerfile.dev .
+Sending build context to Docker daemon  1.443MB
+Step 1/6 : FROM node:alpine
+ ---> ebbf98230a82
+Step 2/6 : WORKDIR '/app'
+ ---> Using cache
+ ---> 9f7ae4ef6f86
+Step 3/6 : COPY package.json .
+ ---> Using cache
+ ---> e82e6149e1de
+Step 4/6 : RUN npm install
+ ---> Using cache
+ ---> fdcf52f1934b
+Step 5/6 : COPY . .
+ ---> Using cache
+ ---> af0619f78edd
+Step 6/6 : CMD ["npm", "run", "start"]
+ ---> Using cache
+ ---> 4775f5bf82de
+Successfully built 4775f5bf82de
+leonidass-mbp:frontend leonidassavvides$ docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app 4775f5bf82de
+Unable to find image 'for:latest' locally
+docker: Error response from daemon: pull access denied for for, repository does not exist or may require 'docker login'.
+See 'docker run --help'.
+leonidass-mbp:frontend leonidassavvides$ docker login lsepolis123
+Username: lsepolis123
+Password: 
+Error response from daemon: Get https://lsepolis123/v2/: Service Unavailable
+leonidass-mbp:frontend leonidassavvides$ docker login
+Authenticating with existing credentials...
+Login Succeeded
+leonidass-mbp:frontend leonidassavvides$ docker build -f Dockerfile.dev .
+Sending build context to Docker daemon  1.443MB
+Step 1/6 : FROM node:alpine
+ ---> ebbf98230a82
+Step 2/6 : WORKDIR '/app'
+ ---> Using cache
+ ---> 9f7ae4ef6f86
+Step 3/6 : COPY package.json .
+ ---> Using cache
+ ---> e82e6149e1de
+Step 4/6 : RUN npm install
+ ---> Using cache
+ ---> fdcf52f1934b
+Step 5/6 : COPY . .
+ ---> Using cache
+ ---> af0619f78edd
+Step 6/6 : CMD ["npm", "run", "start"]
+ ---> Using cache
+ ---> 4775f5bf82de
+Successfully built 4775f5bf82de
+leonidass-mbp:frontend leonidassavvides$ docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app 4775f5bf82de
+Unable to find image 'for:latest' locally
+docker: Error response from daemon: pull access denied for for, repository does not exist or may require 'docker login'.
+See 'docker run --help'.
+leonidass-mbp:frontend leonidassavvides$ 

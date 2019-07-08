@@ -1,0 +1,152 @@
+leonidass-mbp:Docker for Mac leonidassavvides$ ls
+frontend        redis-image     simpleweb       visits          visits.zip
+leonidass-mbp:Docker for Mac leonidassavvides$ cd frontend/
+leonidass-mbp:frontend leonidassavvides$ docker build .
+Sending build context to Docker daemon  1.483MB
+Step 1/8 : FROM node:alpine as builder
+ ---> ebbf98230a82
+Step 2/8 : WORKDIR '/app'
+ ---> Using cache
+ ---> 9f7ae4ef6f86
+Step 3/8 : COPY package.json .
+ ---> Using cache
+ ---> e82e6149e1de
+Step 4/8 : RUN npm install
+ ---> Using cache
+ ---> fdcf52f1934b
+Step 5/8 : COPY . .
+ ---> 8b2c92783939
+Step 6/8 : RUN npm run build
+ ---> Running in 4249ca47e718
+
+> frontend@0.1.0 build /app
+> react-scripts build
+
+Creating an optimized production build...
+Compiled successfully.
+
+File sizes after gzip:
+
+  36.8 KB        build/static/js/2.d16a2668.chunk.js
+  761 B          build/static/js/runtime~main.fdfcfda2.js
+  737 B (+19 B)  build/static/js/main.45b68b09.chunk.js
+  540 B (+1 B)   build/static/css/main.01534e8c.chunk.css
+
+The project was built assuming it is hosted at the server root.
+You can control this with the homepage field in your package.json.
+For example, add this to build it for GitHub Pages:
+
+  "homepage" : "http://myname.github.io/myapp",
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  npm install -g serve
+  serve -s build
+
+Find out more about deployment here:
+
+  http://bit.ly/CRA-deploy
+
+Removing intermediate container 4249ca47e718
+ ---> 6f011bf810ce
+Step 7/8 : FROM nginx
+Get https://registry-1.docker.io/v2/library/nginx/manifests/latest: unauthorized: incorrect username or password
+leonidass-mbp:frontend leonidassavvides$ docker build .
+Sending build context to Docker daemon  1.483MB
+Step 1/8 : FROM node:alpine as builder
+ ---> ebbf98230a82
+Step 2/8 : WORKDIR '/app'
+ ---> Using cache
+ ---> 9f7ae4ef6f86
+Step 3/8 : COPY package.json .
+ ---> Using cache
+ ---> e82e6149e1de
+Step 4/8 : RUN npm install
+ ---> Using cache
+ ---> fdcf52f1934b
+Step 5/8 : COPY . .
+ ---> Using cache
+ ---> 8b2c92783939
+Step 6/8 : RUN npm run build
+ ---> Using cache
+ ---> 6f011bf810ce
+Step 7/8 : FROM nginx
+Get https://registry-1.docker.io/v2/library/nginx/manifests/latest: unauthorized: incorrect username or password
+leonidass-mbp:frontend leonidassavvides$ docker pull nginx
+Using default tag: latest
+Error response from daemon: Get https://registry-1.docker.io/v2/library/nginx/manifests/latest: unauthorized: incorrect username or password
+leonidass-mbp:frontend leonidassavvides$ sudo docker build .
+Password:
+Sending build context to Docker daemon  1.483MB
+Step 1/8 : FROM node:alpine as builder
+ ---> ebbf98230a82
+Step 2/8 : WORKDIR '/app'
+ ---> Using cache
+ ---> 9f7ae4ef6f86
+Step 3/8 : COPY package.json .
+ ---> Using cache
+ ---> e82e6149e1de
+Step 4/8 : RUN npm install
+ ---> Using cache
+ ---> fdcf52f1934b
+Step 5/8 : COPY . .
+ ---> Using cache
+ ---> 8b2c92783939
+Step 6/8 : RUN npm run build
+ ---> Using cache
+ ---> 6f011bf810ce
+Step 7/8 : FROM nginx
+Get https://registry-1.docker.io/v2/library/nginx/manifests/latest: unauthorized: incorrect username or password
+leonidass-mbp:frontend leonidassavvides$ docker login --username lsepolis123
+Password: 
+Login Succeeded
+leonidass-mbp:frontend leonidassavvides$ docker build .
+Sending build context to Docker daemon  1.483MB
+Step 1/8 : FROM node:alpine as builder
+ ---> ebbf98230a82
+Step 2/8 : WORKDIR '/app'
+ ---> Using cache
+ ---> 9f7ae4ef6f86
+Step 3/8 : COPY package.json .
+ ---> Using cache
+ ---> e82e6149e1de
+Step 4/8 : RUN npm install
+ ---> Using cache
+ ---> fdcf52f1934b
+Step 5/8 : COPY . .
+ ---> Using cache
+ ---> 8b2c92783939
+Step 6/8 : RUN npm run build
+ ---> Using cache
+ ---> 6f011bf810ce
+Step 7/8 : FROM nginx
+latest: Pulling from library/nginx
+fc7181108d40: Pull complete 
+d2e987ca2267: Pull complete 
+0b760b431b11: Pull complete 
+Digest: sha256:96fb261b66270b900ea5a2c17a26abbfabe95506e73c3a3c65869a6dbe83223a
+Status: Downloaded newer image for nginx:latest
+ ---> f68d6e55e065
+Step 8/8 : COPY --from=builder /app/build /usr/share/nginx/html
+ ---> 8b152e01b38f
+Successfully built 8b152e01b38f
+leonidass-mbp:frontend leonidassavvides$ docker run -p 8080:80 8b152e01b38f
+172.17.0.1 - - [02/Jul/2019:06:51:26 +0000] "GET / HTTP/1.1" 200 2062 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36" "-"
+172.17.0.1 - - [02/Jul/2019:06:51:26 +0000] "GET /static/css/main.01534e8c.chunk.css HTTP/1.1" 200 1113 "http://localhost:8080/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36" "-"
+172.17.0.1 - - [02/Jul/2019:06:51:26 +0000] "GET /static/js/2.d16a2668.chunk.js HTTP/1.1" 200 119332 "http://localhost:8080/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36" "-"
+172.17.0.1 - - [02/Jul/2019:06:51:26 +0000] "GET /static/js/main.45b68b09.chunk.js HTTP/1.1" 200 1372 "http://localhost:8080/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36" "-"
+172.17.0.1 - - [02/Jul/2019:06:51:26 +0000] "GET /static/media/logo.5d5d9eef.svg HTTP/1.1" 200 2671 "http://localhost:8080/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36" "-"
+172.17.0.1 - - [02/Jul/2019:06:51:27 +0000] "GET /manifest.json HTTP/1.1" 200 306 "http://localhost:8080/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36" "-"
+172.17.0.1 - - [02/Jul/2019:06:51:27 +0000] "GET /favicon.ico HTTP/1.1" 200 3870 "http://localhost:8080/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36" "-"
+
+^C
+
+leonidass-mbp:frontend leonidassavvides$ pwd
+/Users/leonidassavvides/Documents/Docker for Mac/frontend
+leonidass-mbp:frontend leonidassavvides$ 
+
+
+http://localhost:8080/
+
+

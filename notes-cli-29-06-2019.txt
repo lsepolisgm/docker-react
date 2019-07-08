@@ -1,0 +1,575 @@
+leonidass-mbp:Docker for Mac leonidassavvides$ history 100
+  399  md5 -r xampp-osx-7.3.3-1-installer.dmg 
+  400  ls
+  401  cd OneDrive/
+  402  cd "macOS_MBP2016/2018mbp⁨Tamassia_Python_ch5⁩"
+  403  cd "macOS_MBP2016/2018mbp/⁨Tamassia_Python_ch5⁩"
+  404  ls
+  405  cd "macOS_MBP2016/"
+  406  ls
+  407  cd 2018mbp/Tamassia_Python_ch
+  408  cd 2018mbp/Tamassia_Python_ch5
+  409  ls
+  410  pytho 3 R57.py
+  411  python3 R57.py
+  412  python R57.py
+  413  python R57.py
+  414  python R57.py
+  415  python R57.py
+  416  python R57.py
+  417  clear
+  418  python R57.py
+  419  python3 R57.py
+  420  python --version
+  421  history 20
+  422  pwd
+  423  python C422.py
+  424  python C522.py
+  425  python C522.py
+  426  python C522.py
+  427  python C522.py
+  428  python C522.py
+  429  exit
+  430  pwd
+  431  cd "/Users/leonidassavvides/OneDrive/macOS_MBP2016/2019mbp/Python/Tamassia_Python_ch5/C531.py"
+  432  cd "/Users/leonidassavvides/OneDrive/macOS_MBP2016/2019mbp/Python/Tamassia_Python_ch5/"
+  433  python3 C531.py
+  434  python C531.py
+  435  python C531.py
+  436  python C531.py
+  437  python C531.py
+  438  python C531.py
+  439  exit
+  440  cd "/Users/leonidassavvides/OneDrive/macOS_MBP2016/2019mbp/Python/Tamassia_Python_ch5/"
+  441  ls
+  442  python R511.py
+  443  python R511.py
+  444  exit
+  445  cd "/Users/leonidassavvides/OneDrive/macOS_MBP2016/2019mbp/Python/Tamassia_Python_ch5/ch05/"
+  446  python dynamic_array.py 
+  447  python dynamic_array.py 
+  448  python dynamic_array.py 
+  449  exit
+  450  cd "/Users/leonidassavvides/OneDrive/macOS_MBP2016/2019mbp/Python/Tamassia_Python_ch5/"
+  451  python 533.py
+  452  python P533.py
+  453  python P533.py
+  454  python P533.py
+  455  python P533.py
+  456  python P533.py
+  457  python P533.py
+  458  python P533.py
+  459  python P533.py
+  460  python P533.py
+  461  python P533.py
+  462  python P533.py
+  463  python P533.py
+  464  python P533.py
+  465  python P533.py
+  466  python P533.py
+  467  python P533.py
+  468  exit
+  469  ls
+  470  cd Applications/
+  471  ls
+  472  cd XAMPP
+  473  CD DESKTOP
+  474  cd /Desktop
+  475  ls -l
+  476  pwd
+  477  cd /Applications/
+  478  ls
+  479  cd XAMPP
+  480  LS
+  481  CD HTDOCS
+  482  cd htdocsa
+  483  cd htdocs
+  484  ls
+  485  cd Facebook-SDKv5/
+  486  ls
+  487  pwd
+  488  clear
+  489  pwd
+  490  composer update
+  491  composer-update
+  492  composer -help
+  493  composer self-update
+  494  composer require facebook/graph-sdk
+  495  ls
+  496  pwd
+  497  exit
+  498  history 100
+leonidass-mbp:Docker for Mac leonidassavvides$ history | grep docker
+   36  docker version
+   37  docker --version
+   38  docker-compose --version
+   39  docker-machine --version
+   40  docker run hello-world
+   41  docker version
+   44  docker ps
+   45  docker ps
+   47  docker run hello-world
+   48  docker run hello-world
+   49  docker ls
+   50  docker --help
+   51  docker images ls
+   52  docker images ds
+   53  docker images ps
+   54  docker images ps --all
+   55  docker images --all
+   56  docker container ls
+   57  docker container ls -a
+   58  docker ps --all
+   59  docker run busybox echo hi there
+   60  docker ps --all
+   61  docker start 34bf5ac989d4
+   62  docker start -a 34bf5ac989d4
+   63  docker ps --all
+   64  docker system prune
+   65  docker start -a 34bf5ac989d4
+   66  docker logs 34bf5ac989d4
+   67  docker create  busybox ping google.com
+   68  docker start 8b63629f158a58c4ceed07c3db5eec5544e0034c2fe55e6705fd332cc5fc70f2
+   69  docker logs 8b63629f158a58c4ceed07c3db5eec5544e0034c2fe55e6705fd332cc5fc70f2
+   70  docker stop 8b63629f158a58c4ceed07c3db5eec5544e0034c2fe55e6705fd332cc5fc70f2
+   71  docker start 8b63629f158a58c4ceed07c3db5eec5544e0034c2fe55e6705fd332cc5fc70f2
+   72  docker kill 8b63629f158a58c4ceed07c3db5eec5544e0034c2fe55e6705fd332cc5fc70f2
+   73  docker ps --all
+   74  docker run redis
+   75  docker run -it  busybox sh
+   78  docker exec -it 
+   79  docker ps
+   80  docker exec -it ad0d7a13647b redis-cli
+   81  docker exec ad0d7a13647b redis-cli
+   82  docker exec -it ad0d7a13647b redis-cli
+   83  docker ps
+   84  docker exec -i ad0d7a13647b redis-cli
+   85  docker exec -it ad0d7a13647b sh
+   86  docker run -it busybox sh
+   87  docker run -it busybox sh
+  100  docker build .
+  101  docker run e78ca986b83b
+  104  docker build .
+  105  docker build .
+  106  docker run 131c831defe2
+  107  docker build -t lsepolis123/redis:latest .
+  108  docker run lsepolis123/redis
+  109  docker run -it alpine sh
+  112  docker ps
+  113  docker commit -c 'CMD ["redis-server"]' 31aaa446bbd4
+  114  docker run 19af923b2db4a3605ef44870a25b986caba9d07f8671fa0e3410d2405883d760
+  117  leonidass-mbp:redis-image leonidassavvides$ docker ps
+  120  leonidass-mbp:redis-image leonidassavvides$ docker commit -c 'CMD ["redis-server"]' 31aaa446bbd4
+  122  leonidass-mbp:redis-image leonidassavvides$ docker run 19af923b2db4a3605ef44870a25b986caba9d07f8671fa0e3410d2405883d760
+  140  docker build .
+  141  docker build .
+  142  docker build -t lsepolis123/simpleweb .
+  143  docker build -t lsepolis123/simpleweb .
+  144  docker run -p 8080:8080 lsepolis123/simpleweb
+  145  docker run -p 8080:8080 lsepolis123/simpleweb sh
+  147  docker run -p 8080:8080 lsepolis123/simpleweb
+  148  docker build -t lsepolis123/simpleweb .
+  149  docker run -p 8080:8080 lsepolis123/simpleweb
+  150  docker build -t lsepolis123/simpleweb .
+  151  docker run -p 8080:8080 lsepolis123/simpleweb
+  153  docker ps
+  154  docker ps
+  155  docker exec -it 023824fe546b sh
+  172  docker build .
+  173  docker run lsepolis123/simpleweb
+  174  docker run -p 8080:8080 lsepolis123/simpleweb
+  175  docker run -p 5000:8080 lsepolis123/simpleweb
+  177  docker run -it lsepolis123/simpleweb sh
+  179  docker run lsepolis123/visits
+  180  docker compose
+  181  docker-compose
+  183  docker-compose up
+  184  docker run -d redis
+  185  docker ps
+  186  docker stop 2af550bc0f39
+  187  docker stop bc2caf4178c8
+  188  docker-compose up -d
+  189  docker ps
+  190  docker-compose down
+  191  docker ps
+  192  docker ps
+  195  docker build .
+  196  docker build -t lsepolis123/visits:latest . 
+  197  docker run lsepolis123/visits
+  198  docker run redis
+  199  docker-compose up --build
+  200  docker-compose up
+  201  docker-compose up
+  202  docker-compose up --build
+  203  docker run redis
+  204  docker-compose up
+  205  docker ps
+  206  docker-compose ps
+  208  docker-compose ps
+  238  docker build .
+  239  docker build -f Dockerfile.dev .
+  240  docker build -f Dockerfile.dev .
+  241  docker run 0b52b320d199
+  242  docker run 3000:3000 0b52b320d199
+  243  docker run -p 3000:3000 0b52b320d199
+  244  dockermmm run -p 3000:3000-v /app/node_modules -v $(pwd):/app  0b52b320d199
+  245  dockermmm run -p 3000:3000-v /app/node_modules -v $(pwd):/app  0b52b320d199
+  246  docker build -f Dockerfile.dev .
+  247  docker run -p 3000:3000 -v $(pwd):/app 4775f5bf82de
+  248  docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app 4775f5bf82de
+  249  docker build -f Dockerfile.dev .
+  250  docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app 4775f5bf82de
+  251  docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app 4775f5bf82de
+  252  docker build -f Dockerfile.dev .
+  253  docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app 4775f5bf82de
+  254  docker login lsepolis123
+  255  docker login
+  256  docker build -f Dockerfile.dev .
+  257  docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app 4775f5bf82de
+  258  docker build -f Dockerfile.dev . docker 
+  259  docker build -f Dockerfile.dev . 
+  260  docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app 499d8aeea336
+  301  docker build .
+  302  docker build -f Dockerfile.dev .
+  303  docker build -f Dockerfile.dev .
+  304  docker run f05ac8481451
+  305  docker run -p 3000:3000 f05ac8481451
+  307  docker build -f Dockerfile.dev .
+  308  docker run -p 3000:3000 -v $(pwd):/app 30b35a23c84c
+  309  docker run -p 3000:3000 -v $(pwd):/app 30b35a23c84c
+  310  docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app 30b35a23c84c
+  311  docker run --help
+  313  docker build -f Dockerfile.dev .
+  314  docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app 7f5af38cf907
+  315  docker build -p 3000:3000 -f Dockerfile.dev .
+  316  docker build -f Dockerfile.dev .
+  317  docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app 7f5af38cf907
+  321  docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app 30b35a23c84c
+  322  sudo docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app 30b35a23c84c
+  323  docker login lsepolis123
+  324  docker login
+  325  sudo docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app 30b35a23c84c
+  499  history | grep docker
+leonidass-mbp:Docker for Mac leonidassavvides$ 325!
+bash: 325!: command not found
+leonidass-mbp:Docker for Mac leonidassavvides$ !325
+sudo docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app 30b35a23c84c
+Password:
+Unable to find image 'for:latest' locally
+docker: Error response from daemon: pull access denied for for, repository does not exist or may require 'docker login'.
+See 'docker run --help'.
+leonidass-mbp:Docker for Mac leonidassavvides$ sudo docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app 30b35a23c84c
+Unable to find image 'for:latest' locally
+docker: Error response from daemon: Get https://registry-1.docker.io/v2/library/for/manifests/latest: unauthorized: incorrect username or password.
+See 'docker run --help'.
+leonidass-mbp:Docker for Mac leonidassavvides$ ls
+frontend        redis-image     simpleweb       visits          visits.zip
+leonidass-mbp:Docker for Mac leonidassavvides$ cd frontend/
+leonidass-mbp:frontend leonidassavvides$ sudo docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app 30b35a23c84c
+Unable to find image 'for:latest' locally
+docker: Error response from daemon: Get https://registry-1.docker.io/v2/library/for/manifests/latest: unauthorized: incorrect username or password.
+See 'docker run --help'.
+leonidass-mbp:frontend leonidassavvides$ docker-compose up
+ERROR: yaml.scanner.ScannerError: mapping values are not allowed here
+  in "./docker-compose.yml", line 5, column 14
+leonidass-mbp:frontend leonidassavvides$ docker-compose up
+ERROR: In file './docker-compose.yml', service 'vesrsion' must be a mapping not a string.
+leonidass-mbp:frontend leonidassavvides$ docker-compose up
+Creating network "frontend_default" with the default driver
+Building web
+Step 1/6 : FROM node:alpine
+ ---> ebbf98230a82
+Step 2/6 : WORKDIR '/app'
+ ---> Using cache
+ ---> 9f7ae4ef6f86
+Step 3/6 : COPY package.json .
+ ---> dd6b05b82d7c
+Step 4/6 : RUN npm install
+ ---> Running in 96cab2e20d09
+npm WARN deprecated fsevents@1.2.4: Way too old
+npm WARN deprecated core-js@2.6.4: core-js@<2.6.8 is no longer maintained. Please, upgrade to core-js@3 or at least to actual version of core-js@2.
+npm WARN deprecated joi@11.4.0: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
+npm WARN deprecated flatten@1.0.2: I wrote this module a very long time ago; you should use something else.
+npm WARN deprecated topo@2.0.2: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
+npm WARN deprecated hoek@4.2.1: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
+npm WARN deprecated kleur@2.0.2: Please upgrade to kleur@3 or migrate to 'ansi-colors' if you prefer the old syntax. Visit <https://github.com/lukeed/kleur/releases/tag/v3.0.0\> for migration path(s).
+npm WARN deprecated circular-json@0.3.3: CircularJSON is in maintenance only, flatted is its successor.
+npm WARN deprecated left-pad@1.3.0: use String.prototype.padStart()
+
+> core-js@2.6.9 postinstall /app/node_modules/core-js
+> node scripts/postinstall || echo "ignore"
+
+Thank you for using core-js ( https://github.com/zloirock/core-js ) for polyfilling JavaScript standard library!
+
+The project needs your help! Please consider supporting of core-js on Open Collective or Patreon: 
+> https://opencollective.com/core-js 
+> https://www.patreon.com/zloirock 
+
+Also, the author of core-js ( https://github.com/zloirock ) is looking for a good job -)
+
+
+> core-js-pure@3.1.4 postinstall /app/node_modules/core-js-pure
+> node scripts/postinstall || echo "ignore"
+
+Thank you for using core-js ( https://github.com/zloirock/core-js ) for polyfilling JavaScript standard library!
+
+The project needs your help! Please consider supporting of core-js on Open Collective or Patreon: 
+> https://opencollective.com/core-js 
+> https://www.patreon.com/zloirock 
+
+Also, the author of core-js ( https://github.com/zloirock ) is looking for a good job -)
+
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN ts-pnp@1.1.2 requires a peer of typescript@* but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/chokidar/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+added 1826 packages from 719 contributors and audited 36561 packages in 153.022s
+found 68 vulnerabilities (63 low, 5 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+Removing intermediate container 96cab2e20d09
+ ---> f369102e9302
+Step 5/6 : COPY . .
+ ---> 699732109b11
+Step 6/6 : CMD ["npm", "run", "start"]
+ ---> Running in cb4a7490a663
+Removing intermediate container cb4a7490a663
+ ---> 15d341d5af5d
+Successfully built 15d341d5af5d
+Successfully tagged frontend_web:latest
+WARNING: Image for service web was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
+Creating frontend_web_1 ... done
+Attaching to frontend_web_1
+web_1  | 
+web_1  | > frontend@0.1.0 start /app
+web_1  | > react-scripts start
+web_1  | 
+web_1  | Starting the development server...
+web_1  | 
+web_1  | Compiled successfully!
+web_1  | 
+web_1  | You can now view frontend in the browser.
+web_1  | 
+web_1  |   Local:            http://localhost:3000/
+web_1  |   On Your Network:  http://172.18.0.2:3000/
+web_1  | 
+web_1  | Note that the development build is not optimized.
+web_1  | To create a production build, use npm run build.
+web_1  | 
+
+
+
+
+
+
+
+
+
+CLI 1 CONTINUED
+ PASS  src/App.test.js
+  ✓ renders without crashing (5ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        0.091s, estimated 1s
+Ran all test suites matching /app/i.
+
+Active Filters: filename /app/
+ › Press c to clear filters.
+Watch Usage
+ › Press a to run all tests.
+ › Press f to run only failed tests.
+ › Press o to only run tests related to changed files.
+ › Press p to filter by a filename regex pattern.
+ › Press q to quit watch mode.
+ › Press t to filter by a test name regex pattern.
+ › Press Enter to trigger a test run.
+
+leonidass-mbp:frontend leonidassavvides$ docker-compose up
+Starting frontend_web_1 ... done
+Attaching to frontend_web_1
+web_1  | 
+web_1  | > frontend@0.1.0 start /app
+web_1  | > react-scripts start
+web_1  | 
+web_1  | Starting the development server...
+web_1  | 
+web_1  | Compiled successfully!
+web_1  | 
+web_1  | You can now view frontend in the browser.
+web_1  | 
+web_1  |   Local:            http://localhost:3000/
+web_1  |   On Your Network:  http://172.18.0.2:3000/
+web_1  | 
+web_1  | Note that the development build is not optimized.
+web_1  | To create a production build, use npm run build.
+web_1  | 
+^CGracefully stopping... (press Ctrl+C again to force)
+Stopping frontend_web_1 ... done
+leonidass-mbp:frontend leonidassavvides$ docker-compose up --build
+ERROR: yaml.parser.ParserError: while parsing a flow sequence
+  in "./docker-compose.yml", line 19, column 14
+expected ',' or ']', but got '<scalar>'
+  in "./docker-compose.yml", line 19, column 29
+leonidass-mbp:frontend leonidassavvides$ docker-compose up --buildERROR: yaml.parser.ParserError: while parsing a flow sequence
+  in "./docker-compose.yml", line 19, column 14
+expected ',' or ']', but got '<scalar>'
+  in "./docker-compose.yml", line 19, column 29
+leonidass-mbp:frontend leonidassavvides$ docker-compose up --build
+Building web
+Step 1/6 : FROM node:alpine
+ ---> ebbf98230a82
+Step 2/6 : WORKDIR '/app'
+ ---> Using cache
+ ---> 9f7ae4ef6f86
+Step 3/6 : COPY package.json .
+ ---> Using cache
+ ---> dd6b05b82d7c
+Step 4/6 : RUN npm install
+ ---> Using cache
+ ---> f369102e9302
+Step 5/6 : COPY . .
+ ---> 21f90d6a4b6b
+Step 6/6 : CMD ["npm", "run", "start"]
+ ---> Running in ba6e15168b08
+Removing intermediate container ba6e15168b08
+ ---> 289d68dcd468
+Successfully built 289d68dcd468
+Successfully tagged frontend_web:latest
+Building tests
+Step 1/6 : FROM node:alpine
+ ---> ebbf98230a82
+Step 2/6 : WORKDIR '/app'
+ ---> Using cache
+ ---> 9f7ae4ef6f86
+Step 3/6 : COPY package.json .
+ ---> Using cache
+ ---> dd6b05b82d7c
+Step 4/6 : RUN npm install
+ ---> Using cache
+ ---> f369102e9302
+Step 5/6 : COPY . .
+ ---> Using cache
+ ---> 21f90d6a4b6b
+Step 6/6 : CMD ["npm", "run", "start"]
+ ---> Using cache
+ ---> 289d68dcd468
+Successfully built 289d68dcd468
+Successfully tagged frontend_tests:latest
+Recreating frontend_web_1 ... done
+Creating frontend_tests_1 ... done
+Attaching to frontend_web_1, frontend_tests_1
+web_1    | 
+web_1    | > frontend@0.1.0 start /app
+web_1    | > react-scripts start
+web_1    | 
+web_1    | Starting the development server...
+web_1    | 
+web_1    | Compiled successfully!
+web_1    | 
+web_1    | You can now view frontend in the browser.
+web_1    | 
+web_1    |   Local:            http://localhost:3000/
+web_1    |   On Your Network:  http://172.18.0.2:3000/
+web_1    | 
+web_1    | Note that the development build is not optimized.
+web_1    | To create a production build, use npm run build.
+web_1    | 
+tests_1  | 
+tests_1  | > frontend@0.1.0 test /app
+tests_1  | > react-scripts test
+tests_1  | 
+tests_1  | PASS src/App.test.js
+tests_1  |   ✓ renders without crashing (31ms)
+tests_1  | 
+tests_1  | Test Suites: 1 passed, 1 total
+tests_1  | Tests:       1 passed, 1 total
+tests_1  | Snapshots:   0 total
+tests_1  | Time:        2.614s
+tests_1  | Ran all test suites.
+tests_1  | 
+tests_1  | PASS src/App.test.js
+tests_1  |   ✓ renders without crashing (31ms)
+tests_1  |   ✓ renders without crashing (4ms)
+tests_1  | 
+tests_1  | Test Suites: 1 passed, 1 total
+tests_1  | Tests:       2 passed, 2 total
+tests_1  | Snapshots:   0 total
+tests_1  | Time:        2.387s
+tests_1  | Ran all test suites.
+tests_1  | 
+
+q
+
+  | 
+
+q
+frontend_web_1 exited with code 0
+^CGracefully stopping... (press Ctrl+C again to force)
+Stopping frontend_tests_1 ... done
+leonidass-mbp:frontend leonidassavvides$ pwd
+/Users/leonidassavvides/Documents/Docker for Mac/frontend
+leonidass-mbp:frontend leonidassavvides$ 
+
+
+
+
+
+
+CLI 2
+ PASS  src/App.test.js
+  ✓ renders without crashing (31ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        2.199s
+Ran all test suites.
+
+Watch Usage
+ › Press f to run only failed tests.
+ › Press o to only run tests related to changed files.
+ › Press p to filter by a filename regex pattern.
+ › Press q to quit watch mode.
+ › Press t to filter by a test name regex pattern.
+ › Press Enter to trigger a test run.
+
+leonidass-mbp:frontend leonidassavvides$ docker psCONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                         PORTS                    NAMES
+ed0a53c57cbd        frontend_web        "npm run start"     4 minutes ago       Up 4 minutes                   0.0.0.0:3000->3000/tcp   frontend_web_1
+2438ec84440d        frontend_tests      "npm run test"      4 minutes ago       Up 4 minutes                                            frontend_tests_1
+f26eb7f3d98d        visits_node-app     "npm start"         4 months ago        Restarting (1) 9 seconds ago                            visits_node-app_1
+leonidass-mbp:frontend leonidassavvides$ docker attach ed0a53c57cbd
+p
+q
+
+
+
+
+
+
+
+
+
+
+CLI 3
+leonidass-mbp:Docker for Mac leonidassavvides$ ls
+frontend        redis-image     simpleweb       visits          visits.zip
+leonidass-mbp:Docker for Mac leonidassavvides$ cd frontend
+leonidass-mbp:frontend leonidassavvides$ docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                          PORTS                    NAMES
+ed0a53c57cbd        frontend_web        "npm run start"     6 minutes ago       Up 6 minutes                    0.0.0.0:3000->3000/tcp   frontend_web_1
+2438ec84440d        frontend_tests      "npm run test"      6 minutes ago       Up 6 minutes                                             frontend_tests_1
+f26eb7f3d98d        visits_node-app     "npm start"         4 months ago        Restarting (1) 22 seconds ago                            visits_node-app_1
+leonidass-mbp:frontend leonidassavvides$ docker exec -it ed0a53c57cbd sh
+/app # ps
+PID   USER     TIME  COMMAND
+    1 root      0:00 npm
+   18 root      0:00 node /app/node_modules/.bin/react-scripts start
+   25 root      0:11 node /app/node_modules/react-scripts/scripts/start.js
+   61 root      0:00 sh
+   67 root      0:00 ps
+/app # q
+sh: q: not found
