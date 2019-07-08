@@ -1,12 +1,18 @@
 {\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf500
 {\fonttbl\f0\fnil\fcharset0 HelveticaNeue-Bold;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset0 HelveticaNeue;
-\f3\fnil\fcharset0 HelveticaNeue-Light;\f4\fnil\fcharset0 Monaco;}
+\f3\fnil\fcharset0 HelveticaNeue-Light;\f4\fnil\fcharset0 Monaco;\f5\froman\fcharset0 Times-Roman;
+\f6\fmodern\fcharset0 Courier-Bold;\f7\fmodern\fcharset0 Courier;\f8\fnil\fcharset77 ZapfDingbatsITC;
+}
 {\colortbl;\red255\green255\blue255;\red27\green31\blue34;\red255\green255\blue255;\red235\green240\blue244;
 \red244\green246\blue249;\red38\green38\blue38;\red0\green0\blue0;\red31\green36\blue45;\red63\green69\blue80;
-\red162\green70\blue22;\red13\green100\blue126;}
+\red162\green70\blue22;\red13\green100\blue126;\red0\green0\blue233;\red255\green255\blue127;\red32\green32\blue32;
+\red237\green237\blue237;\red83\green83\blue83;\red26\green26\blue26;\red173\green173\blue173;\red167\green211\blue254;
+\red21\green158\blue3;\red165\green255\blue102;\red0\green0\blue233;}
 {\*\expandedcolortbl;;\cssrgb\c14118\c16078\c18039;\cssrgb\c100000\c100000\c100000;\cssrgb\c93725\c95294\c96471;
 \cssrgb\c96471\c97255\c98039;\cssrgb\c20000\c20000\c20000;\csgray\c0;\cssrgb\c16078\c18824\c23137;\cssrgb\c31373\c34118\c38824;
-\cssrgb\c70196\c35294\c10588;\cssrgb\c0\c46667\c56863;}
+\cssrgb\c70196\c35294\c10588;\cssrgb\c0\c46667\c56863;\cssrgb\c0\c0\c93333;\cssrgb\c100000\c100000\c56863;\cssrgb\c16863\c16863\c16863;
+\cssrgb\c94510\c94510\c94510;\cssrgb\c40000\c40000\c40000;\cssrgb\c13333\c13333\c13333;\cssrgb\c73333\c73333\c73333;\cssrgb\c70980\c86275\c99608;
+\cssrgb\c0\c66667\c0;\cssrgb\c69412\c99216\c47451;\cssrgb\c0\c0\c93333;}
 {\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid1\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
 {\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid101\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
 {\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid201\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}}
@@ -86,45 +92,2304 @@ leonidass-mbp:frontend leonidassavvides$ \
 
 \fs28 \cf2 \expnd0\expndtw0\kerning0
 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+
+\fs22 \cf7 \kerning1\expnd0\expndtw0 \CocoaLigature0 leonidass-mbp:frontend leonidassavvides$ git add .\
+leonidass-mbp:frontend leonidassavvides$ git commit -m "added travis file"\
+[master d2c16a7] added travis file\
+ 2 files changed, 139 insertions(+)\
+ create mode 100644 .travis.yml\
+ create mode 100644 notes-setup-github--08-July-2019.rtf\
+leonidass-mbp:frontend leonidassavvides$ git push -u origin master\
+Enumerating objects: 5, done.\
+Counting objects: 100% (5/5), done.\
+Delta compression using up to 8 threads\
+Compressing objects: 100% (4/4), done.\
+Writing objects: 100% (4/4), 2.57 KiB | 2.57 MiB/s, done.\
+Total 4 (delta 1), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.\
+To https://github.com/lsepolisgm/docker-react.git\
+   be51597..d2c16a7  master -> master\
+Branch 'master' set up to track remote branch 'master' from 'origin'.\
+leonidass-mbp:frontend leonidassavvides$ \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\
 \
 \pard\pardeftab720\sl920\partightenfactor0
 
-\f3\fs72 \cf8 \cb3 \outl0\strokewidth0 \strokec8 Fix for Failing Travis Builds\
+\f3\fs72 \cf8 \cb3 Fix for Failing Travis Builds\
 \pard\pardeftab720\sl440\sa400\partightenfactor0
 
 \f2\fs36 \cf8 In the upcoming lecture we will be adding a script to our .travis.yml file. Due to a change in how the Jest library works with Create React App, we need to make a small modification:\cb1 \
 \pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
 \ls1\ilvl0
-\f4\fs24 \cf8 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec8 script:\cf9 \cb1 \strokec9 \
-\ls1\ilvl0\cf8 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec8   - docker run USERNAME/docker-react npm run test -- --coverage\cf9 \cb1 \strokec9 \
+\f4\fs24 \cf8 \cb3 \kerning1\expnd0\expndtw0 {\listtext	.	}\expnd0\expndtw0\kerning0
+script:\cf9 \cb1 \
+\ls1\ilvl0\cf8 \cb3 \kerning1\expnd0\expndtw0 {\listtext	.	}\expnd0\expndtw0\kerning0
+  - docker run USERNAME/docker-react npm run test -- --coverage\cf9 \cb1 \
 \pard\pardeftab720\sl440\sa400\partightenfactor0
 
-\f2\fs36 \cf8 \cb3 \strokec8 instead should be:\cb1 \
+\f2\fs36 \cf8 \cb3 instead should be:\cb1 \
 \pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
 \ls2\ilvl0
-\f4\fs24 \cf8 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec8 script:\cf9 \cb1 \strokec9 \
-\ls2\ilvl0\cf8 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec8   - docker run -e CI=\cf10 \strokec10 true\cf8 \strokec8  USERNAME/docker-react npm run test\cf9 \cb1 \strokec9 \
+\f4\fs24 \cf8 \cb3 \kerning1\expnd0\expndtw0 {\listtext	.	}\expnd0\expndtw0\kerning0
+script:\cf9 \cb1 \
+\ls2\ilvl0\cf8 \cb3 \kerning1\expnd0\expndtw0 {\listtext	.	}\expnd0\expndtw0\kerning0
+  - docker run -e CI=\cf10 true\cf8  USERNAME/docker-react npm run test\cf9 \cb1 \
 \pard\pardeftab720\sl440\sa400\partightenfactor0
 
-\f2\fs36 \cf8 \cb3 \strokec8 You can read up on the CI=true variable here:\cb1 \
+\f2\fs36 \cf8 \cb3 You can read up on the CI=true variable here:\cb1 \
 \pard\pardeftab720\sl440\sa400\partightenfactor0
-{\field{\*\fldinst{HYPERLINK "https://facebook.github.io/create-react-app/docs/running-tests#linux-macos-bash"}}{\fldrslt \cf11 \cb3 \strokec11 https://facebook.github.io/create-react-app/docs/running-tests#linux-macos-bash}}\
+{\field{\*\fldinst{HYPERLINK "https://facebook.github.io/create-react-app/docs/running-tests#linux-macos-bash"}}{\fldrslt \cf11 \cb3 https://facebook.github.io/create-react-app/docs/running-tests#linux-macos-bash}}\
 \pard\pardeftab720\sl440\sa400\partightenfactor0
 \cf8 \cb3 and enviornment variables in Docker here:\cb1 \
 \pard\pardeftab720\sl440\sa400\partightenfactor0
-{\field{\*\fldinst{HYPERLINK "https://docs.docker.com/engine/reference/run/#env-environment-variables"}}{\fldrslt \cf11 \cb3 \strokec11 https://docs.docker.com/engine/reference/run/#env-environment-variables}}\
+{\field{\*\fldinst{HYPERLINK "https://docs.docker.com/engine/reference/run/#env-environment-variables"}}{\fldrslt \cf11 \cb3 https://docs.docker.com/engine/reference/run/#env-environment-variables}}\
 \pard\pardeftab720\sl440\sa400\partightenfactor0
 \cf8 \cb3 Additionally, you may want to set the following property if your travis build fails with \'93rakefile not found\'94 by adding to the top of your .travis.yml file:\cb1 \
 \pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
 \ls3\ilvl0
-\f4\fs24 \cf8 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec8 language: \cf10 \strokec10 generic\cf8 \strokec8  \cf9 \cb1 \strokec9 \
+\f4\fs24 \cf8 \cb3 \kerning1\expnd0\expndtw0 {\listtext	.	}\expnd0\expndtw0\kerning0
+language: \cf10 generic\cf8  \cf9 \cb1 \
 \pard\pardeftab720\sl320\partightenfactor0
 
-\f1\fs28 \cf2 \outl0\strokewidth0 \
+\f1\fs28 \cf2 \
+\
+\
+\
+\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://travis-ci.org/lsepolisgm/docker-react/builds/555719048"}}{\fldrslt 
+\f5\fs24 \cf12 \ul \ulc12 https://travis-ci.org/lsepolisgm/docker-react/builds/555719048}}\
+\pard\pardeftab720\sl320\partightenfactor0
+\cf2 \
+Login w GitHub lsepolisgm\
+\
+\
+\
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b\fs24 \cf13 \cb14 Worker information
+\f7\b0 \cf15 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \cb1 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 hostname: 4653e398-3534-4652-88b0-af16612226b4@1.production-2-worker-org-gce-x9b8\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 version: v6.2.0 https://github.com/travis-ci/worker/tree/5e5476e01646095f48eec13196fdb3faf8f5cbf7\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 instance: travis-job-303a733c-9a4f-448e-936d-f6598406570b travis-ci-garnet-trusty-1512502259-986baf0 (via amqp)\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 startup: 6.116751694s\cb1 \
+\pard\pardeftab720\sl200\partightenfactor0
+
+\fs20 \cf18 \cb16 system_info\
+\pard\pardeftab720\sl380\qr\partightenfactor0
+
+\fs24 \cf16 \cb1 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf13 \cb14 Build system information
+\f7\b0 \cf15 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \cb1 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Build language: ruby\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Build group: stable\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Build dist: trusty\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Build id: 555719048\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Job id: 555719049\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Runtime kernel version: 4.4.0-101-generic\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 travis-build version: 7b7f39e22\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 Build image provisioning date and time
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Tue Dec  5 19:58:13 UTC 2017\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 Operating System Details
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Distributor ID:	Ubuntu\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Description:	Ubuntu 14.04.5 LTS\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Release:	14.04\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Codename:	trusty\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 Cookbooks Version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 7c2c6a6 https://github.com/travis-ci/travis-cookbooks/tree/7c2c6a6\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 git version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 git version 2.15.1\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 bash version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 GNU bash, version 4.3.11(1)-release (x86_64-pc-linux-gnu)\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 gcc version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 gcc (Ubuntu 4.8.4-2ubuntu1~14.04.3) 4.8.4\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Copyright (C) 2013 Free Software Foundation, Inc.\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 This is free software; see the source for copying conditions.  There is NO\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 docker version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Client:\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17  Version:      17.09.0-ce\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17  API version:  1.32\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17  Go version:   go1.8.3\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17  Git commit:   afdb6d4\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17  Built:        Tue Sep 26 22:42:38 2017\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17  OS/Arch:      linux/amd64\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Server:\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17  Version:      17.09.0-ce\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17  API version:  1.32 (minimum version 1.12)\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17  Go version:   go1.8.3\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17  Git commit:   afdb6d4\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17  Built:        Tue Sep 26 22:41:20 2017\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17  OS/Arch:      linux/amd64\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17  Experimental: false\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 clang version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 clang version 5.0.0 (tags/RELEASE_500/final)\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Target: x86_64-unknown-linux-gnu\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Thread model: posix\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 InstalledDir: /usr/local/clang-5.0.0/bin\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 jq version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 jq-1.5\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 bats version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Bats 0.4.0\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 shellch
+\f7\b0 \cf15 eck version\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 0.4.6\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 shfmt version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 v2.0.0\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 ccache version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 ccache version 3.1.9\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Copyright (C) 2002-2007 Andrew Tridgell\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Copyright (C) 2009-2011 Joel Rosdahl\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 This program is free software; you can redistribute it and/or modify it under\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 the terms of the GNU General Public License as published by the Free Software\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Foundation; either version 3 of the License, or (at your option) any later\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 version.\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 cmake version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 cmake version 3.9.2\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 CMake suite maintained and supported by Kitware (kitware.com/cmake).\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 heroku version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 heroku-cli/6.14.39-addc925 (linux-x64) node-v9.2.0\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 imagemagick version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Version: ImageMagick 6.7.7-10 2017-07-31 Q16 http://www.imagemagick.org\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 md5deep version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 4.2\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 mercurial version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Mercurial Distributed SCM (version 4.2.2)\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 (see https://mercurial-scm.org for more information)\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Copyright (C) 2005-2017 Matt Mackall and others\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 This is free software; see the source for copying conditions. There is NO\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 mysql version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 mysql  Ver 14.14 Distrib 5.6.33, for debian-linux-gnu (x86_64) using  EditLine wrapper\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 openssl version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 OpenSSL 1.0.1f 6 Jan 2014\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 packer version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Packer v1.0.2\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Your version of Packer is out of date! The latest version\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 is 1.1.2. You can update by downloading from www.packer.io\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 postgresql client version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 psql (PostgreSQL) 9.6.6\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 ragel version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Ragel State Machine Compiler version 6.8 Feb 2013\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Copyright (c) 2001-2009 by Adrian Thurston\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 subv
+\f7\b0 \cf15 ersion version\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 svn, version 1.8.8 (r1568071)\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17    compiled Aug 10 2017, 17:20:39 on x86_64-pc-linux-gnu\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Copyright (C) 2013 The Apache Software Foundation.\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 This software consists of contributions made by many people;\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 see the NOTICE file for more information.\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Subversion is open source software, see http://subversion.apache.org/\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 The following repository access (RA) modules are available:\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 * ra_svn : Module for accessing a repository using the svn network protocol.\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17   - with Cyrus SASL authentication\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17   - handles 'svn' scheme\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 * ra_local : Module for accessing a repository on local disk.\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17   - handles 'file' scheme\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 * ra_serf : Module for accessing a repository via WebDAV protocol using serf.\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17   - using serf 1.3.3\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17   - handles 'http' scheme\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17   - handles 'https' scheme\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 sudo version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Sudo version 1.8.9p5\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Configure options: --prefix=/usr -v --with-all-insults --with-pam --with-fqdn --with-logging=syslog --with-logfac=authpriv --with-env-editor --with-editor=/usr/bin/editor --with-timeout=15 --with-password-timeout=0 --with-passprompt=[sudo] password for %p:  --without-lecture --with-tty-tickets --disable-root-mailer --enable-admin-flag --with-sendmail=/usr/sbin/sendmail --with-timedir=/var/lib/sudo --mandir=/usr/share/man --libexecdir=/usr/lib/sudo --with-sssd --with-sssd-lib=/usr/lib/x86_64-linux-gnu --with-selinux\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Sudoers policy plugin version 1.8.9p5\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Sudoers file grammar version 43\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Sudoers path: /etc/sudoers\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Authentication methods: 'pam'\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Syslog facility if syslog is being used for logging: authpriv\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Syslog priority to use when user authenticates successfully: notice\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Syslog priority to use when user authenticates unsuccessfully: alert\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Send mail if the user is not in sudoers\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Use a separate timestamp for each user/tty combo\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Lecture user the first time they run sudo\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Root may run sudo\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Allow some information gathering to give useful error messages\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Require fully-qualified hostnames in the sudoers file\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Visudo will honor the EDITOR environment variable\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Set the LOGNAME and USER environment variables\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Length at which to wrap log file lines (0 for no wrap): 80\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Authentication timestamp timeout: 15.0 minutes\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Password prompt timeout: 0.0 minutes\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Number of tries to enter a password: 3\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Umask to use or 0777 to use user's: 022\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Path to mail program: /usr/sbin/sendmail\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Flags for mail program: -t\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Address to send mail to: root\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Subject line for mail messages: *** SECURITY information for %h ***\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Incorrect password message: Sorry, try again.\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Path to authentication timestamp dir: /var/lib/sudo\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Default password prompt: [sudo] password for %p: \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Default user to run commands as: root\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Value to override user's $PATH with: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Path to the editor for use by visudo: /usr/bin/editor\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 When to require a password for 'list' pseudocommand: any\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 When to require a password for 'verify' pseudocommand: all\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 File descriptors >= 3 will be closed before executing a command\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Environment variables to check for sanity:\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	TZ\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	TERM\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	LINGUAS\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	LC_*\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	LANGUAGE\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	LANG\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	COLORTERM\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Environment variables to remove:\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	RUBYOPT\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	RUBYLIB\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	PYTHONUSERBASE\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	PYTHONINSPECT\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	PYTHONPATH\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	PYTHONHOME\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	TMPPREFIX\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	ZDOTDIR\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	READNULLCMD\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	NULLCMD\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	FPATH\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	PERL5DB\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	PERL5OPT\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	PERL5LIB\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	PERLLIB\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	PERLIO_DEBUG \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	JAVA_TOOL_OPTIONS\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	SHELLOPTS\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	GLOBIGNORE\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	PS4\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	BASH_ENV\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	ENV\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	TERMCAP\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	TERMPATH\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	TERMINFO_DIRS\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	TERMINFO\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	_RLD*\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	LD_*\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	PATH_LOCALE\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	NLSPATH\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	HOSTALIASES\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	RES_OPTIONS\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	LOCALDOMAIN\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	CDPATH\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	IFS\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Environment variables to preserve:\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	JAVA_HOME\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	TRAVIS\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	CI\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	DEBIAN_FRONTEND\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	XAUTHORIZATION\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	XAUTHORITY\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	PS2\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	PS1\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	PATH\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	LS_COLORS\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	KRB5CCNAME\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	HOSTNAME\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	HOME\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	DISPLAY\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	COLORS\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Locale to use while parsing sudoers: C\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Directory in which to store input/output logs: /var/log/sudo-io\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 File in which to store the input/output log: %\{seq\}\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Add an entry to the utmp/utmpx file when allocating a pty\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 PAM service name to use\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 PAM service name to use for login shells\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Create a new PAM session for the command to run in\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Maximum I/O log sequence number: 0\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Local IP address and netmask pairs:\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	10.240.0.28/255.255.255.255\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	172.17.0.1/255.255.0.0\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Sudoers I/O plugin version 1.8.9p5\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 gzip version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 gzip 1.6\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Copyright (C) 2007, 2010, 2011 Free Software Foundation, Inc.\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Copyright (C) 1993 Jean-loup Gailly.\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 This is free software.  You may redistribute copies of it under the terms of\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 There is NO WARRANTY, to the extent permitted by law.\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Written by Jean-loup Gailly.\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 zip version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Copyright (c) 1990-2008 Info-ZIP - Type 'zip "-L"' for software license.\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 This is Zip 3.0 (July 5th 2008), by Info-ZIP.\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Currently maintained by E. Gordon.  Please send bug reports to\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 the authors using the web page at www.info-zip.org; see README for details.\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Latest sources and executables are at ftp://ftp.info-zip.org/pub/infozip,\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 as of above date; see http://www.info-zip.org/ for other sites.\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Compiled with gcc 4.8.2 for Unix (Linux ELF) on Oct 21 2013.\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Zip special compilation options:\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	USE_EF_UT_TIME       (store Universal Time)\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	BZIP2_SUPPORT        (bzip2 library version 1.0.6, 6-Sept-2010)\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	    bzip2 code and library copyright (c) Julian R Seward\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	    (See the bzip2 license for terms of use)\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	SYMLINK_SUPPORT      (symbolic links supported)\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	LARGE_FILE_SUPPORT   (can read and write large files on file system)\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	ZIP64_SUPPORT        (use Zip64 to store large files in archives)\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	UNICODE_SUPPORT      (store and read UTF-8 Unicode paths)\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	STORE_UNIX_UIDs_GIDs (store UID/GID sizes/values using new extra field)\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	UIDGID_NOT_16BIT     (old Unix 16-bit UID/GID extra field not used)\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	[encryption, version 2.91 of 05 Jan 2007] (modified for Zip 3)\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Encryption notice:\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	The encryption code of this program is not copyrighted and is\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	put in the public domain.  It was originally written in Europe\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	and, to the best of our knowledge, can be freely distributed\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	in both source and object forms from any country, including\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	the USA under License Exception TSU of the U.S. Export\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 	Administration Regulations (section 740.13(e)) of 6 June 2002.\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Zip environment options:\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17              ZIP:  [none]\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17           ZIPOPT:  [none]\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 vim version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:43:18)\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Included patches: 1-52\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Extra patches: 8.0.0056\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Modified by pkg-vim-maintainers@lists.alioth.debian.org\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Compiled by buildd@\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Huge version without GUI.  Features included (+) or not (-):\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 +acl             +farsi           +mouse_netterm   +syntax\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 +arabic          +file_in_path    +mouse_sgr       +tag_binary\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 +autocmd         +find_in_path    -mouse_sysmouse  +tag_old_static\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 -balloon_eval    +float           +mouse_urxvt     -tag_any_white\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 -browse          +folding         +mouse_xterm     -tcl\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 ++builtin_terms  -footer          +multi_byte      +terminfo\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 +byte_offset     +fork()          +multi_lang      +termresponse\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 +cindent         +gettext         -mzscheme        +textobjects\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 -clientserver    -hangul_input    +netbeans_intg   +title\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 -clipboard       +iconv           +path_extra      -toolbar\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 +cmdline_compl   +insert_expand   -perl            +user_commands\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 +cmdline_hist    +jumplist        +persistent_undo +vertsplit\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 +cmdline_info    +keymap          +postscript      +virtualedit\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 +comments        +langmap         +printer         +visual\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 +conceal         +libcall         +profile         +visualextra\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 +cryptv          +linebreak       +python          +viminfo\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 +cscope          +lispindent      -python3         +vreplace\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 +cursorbind      +listcmds        +quickfix        +wildignore\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 +cursorshape     +localmap        +reltime         +wildmenu\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 +dialog_con      -lua             +rightleft       +windows\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 +diff            +menu            -ruby            +writebackup\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 +digraphs        +mksession       +scrollbind      -X11\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 -dnd             +modify_fname    +signs           -xfontset\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 -ebcdic          +mouse           +smartindent     -xim\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 +emacs_tags      -mouseshape      -sniff           -xsmp\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 +eval            +mouse_dec       +startuptime     -xterm_clipboard\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 +ex_extra        +mouse_gpm       +statusline      -xterm_save\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 +extra_search    -mouse_jsbterm   -sun_workshop    -xpm\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17    system vimrc file: "$VIM/vimrc"\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17      user vimrc file: "$HOME/.vimrc"\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17  2nd user vimrc file: "~/.vim/vimrc"\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17       user exrc file: "$HOME/.exrc"\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17   fall-back for $VIM: "/usr/share/vim"\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Compilation: gcc -c -I. -Iproto -DHAVE_CONFIG_H     -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1      \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Linking: gcc   -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,--as-needed -o vim        -lm -ltinfo -lnsl  -lselinux  -lacl -lattr -lgpm -ldl    -L/usr/lib/python2.7/config-x86_64-linux-gnu -lpython2.7 -lpthread -ldl -lutil -lm -Xlinker -export-dynamic -Wl,-O1 -Wl,-Bsymbolic-functions      \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 iptables version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 iptables v1.4.21\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 curl version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 curl 7.35.0 (x86_64-pc-linux-gnu) libcurl/7.35.0 OpenSSL/1.0.1f zlib/1.2.8 libidn/1.28 librtmp/2.3\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 wget version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 GNU Wget 1.15 built on linux-gnu.\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 rsync version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 rsync  version 3.1.0  protocol version 31\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 gimme version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 v1.2.0\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 nvm version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 0.33.6\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 perlbrew version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 /home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.80\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 phpenv version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 rbenv 1.1.1-25-g6aa70b6\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 rvm version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 rvm 1.29.3 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 default ruby version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 CouchDB version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 couchdb 1.6.1\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 ElasticSearch version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 5.5.0\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 Installed Firefox version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 firefox 56.0.2\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 MongoDB version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 MongoDB 3.4.10\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 m
+\f6\b PhantomJS version
+\f7\b0 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 2.1.1\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 Pre-installed PostgreSQL versions
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 9.2.24\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 9.3.20\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 9.4.15\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 9.5.10\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 9.6.6\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 RabbitMQ Version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 3.6.14\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 Redis version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 redis-server 4.0.6\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 riak version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 2.2.3\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 Pre-installed Go versions
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 1.7.4\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 ant version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Apache Ant(TM) version 1.9.3 compiled on April 8 2014\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 mvn version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Apache Maven 3.5.2 (138edd61fd100ec658bfa2d307c43b76940a5d7d; 2017-10-18T07:58:13Z)\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Maven home: /usr/local/maven-3.5.2\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Java version: 1.8.0_151, vendor: Oracle Corporation\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Java home: /usr/lib/jvm/java-8-oracle/jre\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Default locale: en_US, platform encoding: UTF-8\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 OS name: "linux", version: "4.4.0-98-generic", arch: "amd64", family: "unix"\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 gradle version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 ------------------------------------------------------------\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Gradle 4.0.1\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 ------------------------------------------------------------\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Build time:   2017-07-07 14:02:41 UTC\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Revision:     38e5dc0f772daecca1d2681885d3d85414eb6826\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Groovy:       2.4.11\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Ant:          Apache Ant(TM) version 1.9.6 compiled on June 29 2015\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 JVM:          1.8.0_151 (Oracle Corporation 25.151-b12)\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 OS:           Linux 4.4.0-98-generic amd64\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 lein version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Leiningen 2.8.1 on Java 1.8.0_151 Java HotSpot(TM) 64-Bit Server VM\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 Pre-installed Node.js versions
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 v4.8.6\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 v6.12.0\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 v6.12.1\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 v8.9\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 v8.9.1\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 phpenv versions
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17   system\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17   5.6\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 * 5.6.32 (set by /home/travis/.phpenv/version)\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17   7.0\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17   7.0.25\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17   7.1\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17   7.1.11\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17   hhvm\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17   hhvm-stable\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 composer --version
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Composer version 1.5.2 2017-09-11 16:59:25\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf19 \cb17 Pre-installed Ruby versions
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 ruby-2.2.7\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 ruby-2.3.4\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 ruby-2.4.1\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl200\partightenfactor0
+
+\fs20 \cf18 \cb16 docker_mtu\
+\pard\pardeftab720\sl380\qr\partightenfactor0
+
+\fs24 \cf16 \cb1 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb14 docker stop/waiting\
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \cb1 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 docker start/running, process 3624\cb1 \
+\pard\pardeftab720\sl200\partightenfactor0
+
+\fs20 \cf18 \cb16 resolvconf\
+\pard\pardeftab720\sl380\qr\partightenfactor0
+
+\fs24 \cf16 \cb1 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb14 resolvconf stop/waiting\
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \cb1 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 resolvconf start/running\cb1 \
+\pard\pardeftab720\sl200\partightenfactor0
+
+\fs20 \cf18 \cb16 services\
+\pard\pardeftab720\sl380\qr\partightenfactor0
+
+\fs24 \cf16 \cb1 \
+\pard\pardeftab720\sl200\partightenfactor0
+
+\fs20 \cf18 \cb16 0.01s\
+\pard\pardeftab720\sl380\partightenfactor0
+
+\fs24 \cf15 \cb14 $ sudo service docker start\
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \cb1 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 start: Job is already running: docker\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl200\partightenfactor0
+
+\fs20 \cf18 \cb16 git.checkout\
+\pard\pardeftab720\sl380\qr\partightenfactor0
+
+\fs24 \cf16 \cb1 \
+\pard\pardeftab720\sl200\partightenfactor0
+
+\fs20 \cf18 \cb16 0.66s\
+\pard\pardeftab720\sl380\partightenfactor0
+
+\fs24 \cf15 \cb14 $ git clone --depth=50 --branch=master https://github.com/lsepolisgm/docker-react.git lsepolisgm/docker-react\
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \cb1 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Cloning into 'lsepolisgm/docker-react'...\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 remote: Enumerating objects: 35, done.\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 remote: Counting objects: 100% (35/35), done.\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 remote: Compressing objects: 100% (30/30), done.\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 remote: Total 35 (delta 5), reused 35 (delta 5), pack-reused 0\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Unpacking objects: 100% (35/35), done.\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 $ cd lsepolisgm/docker-react\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 $ git checkout -qf d2c16a7e791ea90f20125a87ac574d7fb72c7b56\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl200\partightenfactor0
+
+\fs20 \cf18 \cb16 rvm\
+\pard\pardeftab720\sl380\qr\partightenfactor0
+
+\fs24 \cf16 \cb1 \
+\pard\pardeftab720\sl200\partightenfactor0
+
+\fs20 \cf18 \cb16 4.13s\
+\pard\pardeftab720\sl380\partightenfactor0
+
+\fs24 \cf15 \cb14 $ rvm use default\
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \cb1 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf20 \cb17 Using /home/travis/.rvm/gems/ruby-2.4.1\cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf21 \cb17 ** Updating RubyGems to the latest compatible version for security reasons. **
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf21 \cb17 ** If you need an older version, you can downgrade with 'gem update --system OLD_VERSION'. **
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl200\partightenfactor0
+
+\fs20 \cf18 \cb16 ruby.versions\
+\pard\pardeftab720\sl380\qr\partightenfactor0
+
+\fs24 \cf16 \cb1 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb14 $ ruby --version\
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \cb1 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 $ rvm --version\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 rvm 1.29.3 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 $ bundle --version\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Bundler version 1.17.3\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 $ gem --version\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 3.0.4\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl200\partightenfactor0
+
+\fs20 \cf18 \cb16 before_install\
+\pard\pardeftab720\sl380\qr\partightenfactor0
+
+\fs24 \cf16 \cb1 \
+\pard\pardeftab720\sl200\partightenfactor0
+
+\fs20 \cf18 \cb16 60.26s\
+\pard\pardeftab720\sl380\partightenfactor0
+
+\fs24 \cf15 \cb14 $ docker build -t lsepolisgm/docker-react -f Dockerfile.dev .\
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \cb1 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Sending build context to Docker daemon  1.019MB\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Step 1/6 : FROM node:alpine\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 alpine: Pulling from library/node\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Status: Downloaded newer image for node:alpine\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17  ---> a9a8b83644f7\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Step 2/6 : WORKDIR '/app'\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17  ---> c90bb473ba51\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Removing intermediate container 33d4d388d4f8\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Step 3/6 : COPY package.json .\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17  ---> d2c0302e3154\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Step 4/6 : RUN npm install\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17  ---> Running in 5857c0a357ab\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 npm WARN deprecated fsevents@1.2.4: Way too old\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 npm WARN deprecated core-js@2.6.4: core-js@<2.6.8 is no longer maintained. Please, upgrade to core-js@3 or at least to actual version of core-js@2.\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 npm WARN deprecated joi@11.4.0: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 npm WARN deprecated circular-json@0.3.3: CircularJSON is in maintenance only, flatted is its successor.\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 npm WARN deprecated kleur@2.0.2: Please upgrade to kleur@3 or migrate to 'ansi-colors' if you prefer the old syntax. Visit <https://github.com/lukeed/kleur/releases/tag/v3.0.0\\> for migration path(s).\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 npm WARN deprecated flatten@1.0.2: I wrote this module a very long time ago; you should use something else.\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 npm WARN deprecated hoek@4.2.1: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 npm WARN deprecated topo@2.0.2: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 npm WARN deprecated left-pad@1.3.0: use String.prototype.padStart()\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 > core-js@2.6.9 postinstall /app/node_modules/core-js\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 > node scripts/postinstall || echo "ignore"\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Thank you for using core-js ( https://github.com/zloirock/core-js ) for polyfilling JavaScript standard library!\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 The project needs your help! Please consider supporting of core-js on Open Collective or Patreon: \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 > https://opencollective.com/core-js \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 > https://www.patreon.com/zloirock \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Also, the author of core-js ( https://github.com/zloirock ) is looking for a good job -)\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 > core-js-pure@3.1.4 postinstall /app/node_modules/core-js-pure\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 > node scripts/postinstall || echo "ignore"\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Thank you for using core-js ( https://github.com/zloirock/core-js ) for polyfilling JavaScript standard library!\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 The project needs your help! Please consider supporting of core-js on Open Collective or Patreon: \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 > https://opencollective.com/core-js \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 > https://www.patreon.com/zloirock \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Also, the author of core-js ( https://github.com/zloirock ) is looking for a good job -)\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 npm notice created a lockfile as package-lock.json. You should commit this file.\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 npm WARN ts-pnp@1.1.2 requires a peer of typescript@* but none is installed. You must install peer dependencies yourself.\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules/fsevents):\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted \{"os":"darwin","arch":"any"\} (current: \{"os":"linux","arch":"x64"\})\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/chokidar/node_modules/fsevents):\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted \{"os":"darwin","arch":"any"\} (current: \{"os":"linux","arch":"x64"\})\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 added 1830 packages from 717 contributors and audited 36730 packages in 40.609s\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 found 68 vulnerabilities (63 low, 5 high)\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17   run `npm audit fix` to fix them, or `npm audit` for details\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17  ---> aca091b97654\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Removing intermediate container 5857c0a357ab\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Step 5/6 : COPY . .\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17  ---> 69c19f3d87a6\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Step 6/6 : CMD npm run start\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17  ---> Running in 73f974fb50a9\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17  ---> 81a324b3de05\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Removing intermediate container 73f974fb50a9\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Successfully built 81a324b3de05\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Successfully tagged lsepolisgm/docker-react:latest\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 No Gemfile found, skipping bundle install\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl200\partightenfactor0
+
+\fs20 \cf18 \cb16 3.18s\
+\pard\pardeftab720\sl380\partightenfactor0
+
+\fs24 \cf15 \cb17 $ docker run lsepolisgm/docker-react npm run test -- --coverage\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 > frontend@0.1.0 test /app\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 > react-scripts test "--coverage"\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 PASS src/App.test.js\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17   
+\f8 \uc0\u10003 
+\f7  renders without crashing (21ms)\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17   
+\f8 \uc0\u10003 
+\f7  renders without crashing (2ms)\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 ------------------|----------|----------|----------|----------|-------------------|\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 File              |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 ------------------|----------|----------|----------|----------|-------------------|\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 All files         |     2.22 |        0 |     6.25 |     2.22 |                   |\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17  App.js           |      100 |      100 |      100 |      100 |                   |\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17  index.js         |        0 |      100 |      100 |        0 |      1,2,3,4,5,12 |\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17  serviceWorker.js |        0 |        0 |        0 |        0 |... 23,130,131,132 |\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 ------------------|----------|----------|----------|----------|-------------------|\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Test Suites: 1 passed, 1 total\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Tests:       2 passed, 2 total\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Snapshots:   0 total\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Time:        1.819s\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Ran all test suites.\cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f6\b \cf21 \cb17 The command "docker run lsepolisgm/docker-react npm run test -- --coverage" exited with 0.
+\f7\b0 \cf15 \cb1 \
+\pard\pardeftab720\sl380\qr\partightenfactor0
+\cf16 \
+\
+\
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf15 \cb17 Done. Your build exited with 0.\cb1 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf2 \
+\
+\
+\
+\
+\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://aws.amazon.com/"}}{\fldrslt 
+\f5\fs24 \cf22 \ul \ulc22 \outl0\strokewidth0 \strokec22 https://aws.amazon.com/}}
+\f5\fs24 \cf22 \ul \ulc22 \outl0\strokewidth0 \strokec22 \
+\
+\
+\
+0:53
+\f1\fs28 \cf2 \ulnone \outl0\strokewidth0 \
+\pard\pardeftab720\sl320\partightenfactor0
+\cf2 \
+\
 \
 }
