@@ -9,15 +9,15 @@ script:
   - docker run lsepolisgm/docker-react npm run test -- --coverage
 
 deploy:
-  provider: elasticbeantalk
+  provider: elasticbeanstalk
   region: "eu-central-1"
-  app: "docker-react"
-  env: "DockerReact-env"
+  app: "docker-react2"
+  env: "DockerReact2-env"
   bucket_name: "elasticbeanstalk-eu-central-1-543877749767"
   bucket-path: "docker-react"
   on: 
     branch: master
-  access_key_id: "$AWS_ACCESS_KEY"
+  access_key_id: $AWS_ACCESS_KEY
   secret_access_key:
     secure: "$AWS_SECRET_KEY"
 
